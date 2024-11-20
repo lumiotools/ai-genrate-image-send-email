@@ -175,7 +175,7 @@ const sendEmailsEveryDay = async () => {
     // ["riteshdhapate1@gmail.com"],
     if (emails.length > 0) {
       await sendEmails(
-        emails,
+        ["riteshdhapate1@gmail.com"],
         DailyEmailTemplet[0].message,
         DailyEmailTemplet[0].image,
         DailyEmailTemplet[0].title,
@@ -250,7 +250,7 @@ const getCurrentDay = () => {
   return daysOfWeek[dayIndex]; // Return the name of the day
 };
 
-let emailSentTime = "1:03 PM";
+let emailSentTime = "11:43 AM";
 let ifSent = false;
 setInterval(async () => {
   const currentTime = getCurrentTime();
